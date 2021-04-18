@@ -18,11 +18,11 @@ Recuerda que todos estos comandos los puedes cambiar a antojo y cambiar sus func
 # Notas
 ***ADVERTENCIA, el entorno vritual es configurable a la version de python que estes utilizando, solo tienes que ir al codigo del archivo generado por***
 
-**pipenv shell**
+**__pipenv shell__**
 
 ***Modificar el:***
 
-**python_version = " version de python que tengas** 
+**__python_version = " version de python que tengas__** 
 
 ***para que no tengas problemas con la version de python que tengas y la que utilizaras en el entorno virtual.***
 
