@@ -7,13 +7,13 @@
 
 por ahora mi bot solo cuenta con los siguientes comandos:
 
-📝 /creator - Muestra el nombre del administrador.
+- 📝 /creator - Muestra el nombre del administrador.
 
-📝 /help - Muestra una lista de los comandos.
+- 📝 /help - Muestra una lista de los comandos.
 
-📝 /botInfo - Muestra informacion acerca de mi.
+- 📝 /botInfo - Muestra informacion acerca de mi.
 
-📝 /start - Imprime un breve mensaje de lo que seria iniciarla (el bot).
+- 📝 /start - Imprime un breve mensaje de lo que seria iniciarla (el bot).
 
 Recuerda que todos estos comandos los puedes cambiar a antojo y cambiar sus funcionalidades.
 
