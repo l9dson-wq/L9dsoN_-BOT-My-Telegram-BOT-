@@ -1,3 +1,9 @@
+"""
+Este software fue creado por Andelson Lopez. 
+This software was created by Andelson Lopez.
+Correo electronico o Email: andelsonprogrammer@gmail.com
+"""
+
 import os
 import sys 
 import logging #Para ver lo que hace el bot
