@@ -1,7 +1,7 @@
 # L9dsoN_-BOT-My-Telegram-BOT-
 
 ## Spanish
-Bot incompleto, aun faltan cosas por mejorar y contiene erroes.
+**Bot incompleto, aun faltan cosas por mejorar y contiene erroes.**
 
 por ahora mi bot solo cuenta con los siguientes comandos:
 
