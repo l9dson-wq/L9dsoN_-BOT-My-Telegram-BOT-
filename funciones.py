@@ -45,6 +45,7 @@ def helpBot(update, context):
         📝 /help - Muestra una lista de los comandos.
         📝 /botInfo - Muestra informacion acerca de mi.
         📝 /start - Imprime un breve mensaje de lo que seria iniciarla.
+        📝 /github - Muestra el GitHub del desarrollador.
         ███▓▒░░curiosos 🙃░░▒▓███  
         📝 /addEvent - agregar un evento.
         📝 /events - ver todos los eventos agregados.
@@ -113,4 +114,16 @@ def event(update,context):
     bot.sendMessage(
         chat_id = chatId,
         text = eventos
+    )
+
+def githubCretor(update, context):
+    chatId = update.message.chat_id
+    userName = update.effective_user['first_name']
+    bot = context.bot
+
+    logger.info(f"El usuario {userName} ha solicitado tu GitHub")
+    bot.sendMessage(
+        chat_id = chatId,
+        text = """ Este es el GitHub del creador y administrador del Bot
+        https://github.com/l9dson-wq"""
     )
