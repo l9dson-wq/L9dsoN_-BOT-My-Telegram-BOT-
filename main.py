@@ -51,8 +51,7 @@ def welcomeUser(update, context):
 
     bot.sendMessage(
         chat_id = chatId,
-        parse_mode = "HTML",
-        text = f"<b>Bienvenido al grupo! {userName} </b> \nespero que te la pases de maravilla con notros!!!</b>"
+        text = f"Bienvenido al grupo! {userName} espero que te la pases de maravilla con notros!!!"
     )
 
 #funcion para eliminar el mensaje enviado desde la funcion echo
@@ -75,7 +74,9 @@ def echo(update, context):
     text = update.message.text #obtener el texto que envio el usuario al chat
     logger.info(f" el usuario {userName} ha enviado un nuevo mensaje al grupo {chatId}")
 
-    badWord = ['singa tu madre',"Mmg",'mmg'] #palabrsa groseras, podria hacer una lista con esto
+    #Palabras groseras para eliminar del chat
+    badWord = ['singa tu madre',"Mmg",'mmg','idiota','ridiculo','buen mmg','buen singa tu madre','singa perra','loco el diablo','hijo e perra']
+
     for x in badWord:
         if x in text:
             deleteMessage(bot, chatId, messageId, userName)
@@ -108,6 +109,7 @@ updater = Updater(myBot.token, use_context=True)
 dp = updater.dispatcher
 
 #manejador, create command
+dp.add_handler(CommandHandler("github", githubCretor))
 dp.add_handler(CommandHandler("help", helpBot))
 dp.add_handler(CommandHandler("creator", infoCreator))
 dp.add_handler(CommandHandler("botInfo", getBotInfo))
