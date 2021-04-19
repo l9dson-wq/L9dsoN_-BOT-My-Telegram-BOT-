@@ -5,7 +5,7 @@
 ## Spanish
 
 1. Languages Documentation:
-  - [English Documentation for this project](Langs/English.md)
+   - [English Documentation for this project](Langs/English.md)
 
 **Bot incompleto, aun faltan cosas por mejorar y contiene erroes.**
 
