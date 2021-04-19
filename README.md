@@ -2,10 +2,10 @@
 
 ![Facebook Cover 851x315 px](https://user-images.githubusercontent.com/69158247/115162486-c2824d00-a071-11eb-93f2-fd29220dfaf9.png)
 
-## Spanish
-
 1. Languages Documentation:
    - [English](Langs/English.md)
+
+## Spanish
 
 **Bot incompleto, aun faltan cosas por mejorar y contiene erroes.**
 
