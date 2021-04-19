@@ -8,7 +8,8 @@
 # Introduccion
 
 Si tienes problemas ejecutando el bot o no comprendes bien te recomiendo que visites el GitHub:
-(https://github.com/python-telegram-bot/python-telegram-bot)
+
+https://github.com/python-telegram-bot/python-telegram-bot
 
 **Bot incompleto, aun faltan cosas por mejorar y contiene erroes.**
 
