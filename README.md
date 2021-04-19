@@ -29,6 +29,9 @@ por ahora mi bot solo cuenta con los siguientes comandos:
 
 - 📝 /events - Muestra la lista de eventos que se han agregado.
 
+- 📝 /github - Muestra el GitHub del desarrollador (en este caso el mio).
+
+
 Recuerda que todos estos comandos los puedes cambiar a antojo y cambiar sus funcionalidades.
 
 # Notas
