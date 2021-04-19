@@ -5,7 +5,10 @@
 1. Languages Documentation:
    - [English](Langs/English.md)
 
-## Spanish
+# Introduccion
+
+Si tienes problemas ejecutando el bot o no comprendes bien te recomiendo que visites el GitHub:
+(https://github.com/python-telegram-bot/python-telegram-bot)
 
 **Bot incompleto, aun faltan cosas por mejorar y contiene erroes.**
 
