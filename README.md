@@ -11,6 +11,8 @@ Si tienes problemas ejecutando el bot o no comprendes bien te recomiendo que vis
 
 https://github.com/python-telegram-bot/python-telegram-bot
 
+# BOT
+
 **Bot incompleto, aun faltan cosas por mejorar y contiene erroes.**
 
 por ahora mi bot solo cuenta con los siguientes comandos:
