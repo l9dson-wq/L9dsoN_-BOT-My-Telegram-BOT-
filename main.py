@@ -23,21 +23,66 @@ TOKEN = os.getenv('TOKEN')
 
 eventos = "El evento es: "
 
-
 #verificar si el usuario que envio el comando es admin o no
 def user_is_admin(chatId, userId, bot):
     try:
-        groupAdmins = bot.get_chat_adminstrators(chatId)
+        groupAdmins = bot.get_chat_administrators(chatId)
         for admin in groupAdmins:
             if admin.user.id == userId:
-                isAdmin = True
+                isAdmin = True #si sale verdadero quiere decir que el usuario tiene permisos de administrador en el grupo
             else:
                 isAdmin = False
 
         return isAdmin
     except Exception as es:
-        print(es)
+        print("No se pudo completar por alguna razon")
 
+def addEvent(update, context):
+    global eventos
+    bot = context.bot
+    chatId = update.message.chat_id
+    userName = update.effective_user["first_name"]
+    userId = update.effective_user['id']
+    args = context.args
+
+    if user_is_admin(chatId, userId, bot) == True:
+        if len(args) == 0:
+            logger.info(f"el usuario {userName} no ha ingresado argumentos")
+            context.bot.sendAnimation(
+                chat_id = chatId,
+                animation = "https://tenor.com/buApE.gif",
+                caption=f"{userName} debes ingresar mas informacion para agregar el evento"
+            )
+        else:
+            evento = ' '.join(args)
+            eventos = eventos + '\n>>' + evento
+
+            logger.info(f'el usuario {userName} ha ingresado un nuevo envento')
+
+            context.bot.sendAnimation(
+                chat_id = chatId,
+                animation="https://tenor.com/ZD80.gif",
+                caption=f"El admin {userName} ha ingresado un evento"
+            )
+    else:
+        logger.info(f"{userName} ha intentado agregar un evento pero no tiene permisos")
+        context.bot.sendAnimation(
+            chat_id = chatId,
+            animation="https://tenor.com/YxQD.gif",
+            caption=f"El usuario {userName} no tiene permisos para ejecutar este comando 🛑"
+        )        
+
+#imprimir todos los eventos que se han ingresado
+def event(update,context):
+    chatId = update.message.chat_id
+    userName = update.effective_user['first_name']
+    bot = context.bot
+
+    logger.info(f"el usuario {userName} ha solicitado eventos")
+    bot.sendMessage(
+        chat_id = chatId,
+        text = eventos
+    )
 
 #funcion para dar la bienvenido a los usuarios nuevos
 def welcomeUser(update, context):
@@ -49,9 +94,10 @@ def welcomeUser(update, context):
 
     logger.info(f"El usuario {userName} ha ingresado al grupo")
 
-    bot.sendMessage(
-        chat_id = chatId,
-        text = f"Bienvenido al grupo! {userName} espero que te la pases de maravilla con notros!!!"
+    context.bot.sendAnimation(
+        chat_id=chatId,
+        animation="https://tenor.com/view/party-time-jolly-cheerful-confetti-gif-16628356",
+        caption=f"Bievenido al grupo! {userName} 🥳🥳"
     )
 
 #funcion para eliminar el mensaje enviado desde la funcion echo
@@ -75,25 +121,40 @@ def echo(update, context):
     logger.info(f" el usuario {userName} ha enviado un nuevo mensaje al grupo {chatId}")
 
     #Palabras groseras para eliminar del chat
-    badWord = ['singa tu madre',"Mmg",'mmg','idiota','ridiculo','buen mmg','buen singa tu madre','singa perra','loco el diablo','hijo e perra']
+    badWord = [
+        'singa tu madre',
+        "Mmg",
+        'mmg',
+        'idiota',
+        'ridiculo',
+        'buen mmg',
+        'buen singa tu madre',
+        'singa perra',
+        'loco el diablo',
+        'hijo e perra'
+        ]
 
     for x in badWord:
         if x in text:
             deleteMessage(bot, chatId, messageId, userName)
-            bot.sendMessage(
-                chat_id = chatId,
-                text=f"el mensaje del usuario {userName} se ha eliminado por que contenia malas palabras"
-            )
+            context.bot.sendAnimation(
+                chat_id=chatId, 
+                animation="https://tenor.com/bbpYs.gif",
+                caption=f"el mensaje del usuario {userName} se ha eliminado por que contenia malas palabras"
+                )
+
     if 'hola' in text and 'bot' in text:
-        bot.sendMessage(
+        context.bot.sendAnimation(
             chat_id=chatId,
-            text= f'Hola {userName}! gracias por saludar.'
-        ) 
+            animation="https://tenor.com/bfd0n.gif",
+            caption=f"Hola {userName}! gracias por saludas."
+        )
     elif 'Hola' in text and 'bot' in text:
-        bot.sendMessage(
+        context.bot.sendAnimation(
             chat_id=chatId,
-            text= f'Hola {userName}! gracias por saludar.'
-        ) 
+            animation="https://tenor.com/bfd0n.gif",
+            caption=f"Hola {userName}! gracias por saludas."
+        )
 
 
 
