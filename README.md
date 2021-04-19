@@ -15,6 +15,10 @@ por ahora mi bot solo cuenta con los siguientes comandos:
 
 - 📝 /start - Imprime un breve mensaje de lo que seria iniciarla (el bot).
 
+- 📝 /addEvent - Agrega un evento a una lista (solo administradores).
+
+- 📝 /events - Muestra la lista de eventos que se han agregado.
+
 Recuerda que todos estos comandos los puedes cambiar a antojo y cambiar sus funcionalidades.
 
 # Notas
