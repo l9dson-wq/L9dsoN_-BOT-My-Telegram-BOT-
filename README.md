@@ -46,4 +46,8 @@ python_version = " version de python que tengas
 
 ***para que no tengas problemas con la version de python que tengas y la que utilizaras en el entorno virtual.***
 
+# Recursos
 
+Estas son algunas de las paginas donde recopila informacion que puede ser de ayuda: 
+
+https://rdrr.io/cran/telegram.bot/
