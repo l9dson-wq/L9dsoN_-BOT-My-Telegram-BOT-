@@ -36,4 +36,4 @@ python_version = " version de python que tengas
 
 ***para que no tengas problemas con la version de python que tengas y la que utilizaras en el entorno virtual.***
 
-[English Documentation for this project](docs/English.md)
+[English Documentation for this project](L9dsoN_-BOT-My-Telegram-BOT- /English.md)
