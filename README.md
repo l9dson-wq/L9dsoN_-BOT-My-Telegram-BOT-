@@ -49,7 +49,7 @@ python_version = " version de python que tengas
 
 ***para que no tengas problemas con la version de python que tengas y la que utilizaras en el entorno virtual.***
 
-***No olvidees usar tu propio TOKEN para poder manipular tu BOT-Telegram***
+🔴***No olvidees usar tu propio TOKEN para poder manipular tu BOT-Telegram***
 
 # Recursos
 
