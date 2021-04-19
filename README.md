@@ -35,6 +35,3 @@ python_version = " version de python que tengas
 ```
 
 ***para que no tengas problemas con la version de python que tengas y la que utilizaras en el entorno virtual.***
-
-## English
-Incomplete bot, there are still things to improve and it contains errors.
