@@ -2,7 +2,7 @@
 
 ![Facebook Cover 851x315 px](https://user-images.githubusercontent.com/69158247/115162486-c2824d00-a071-11eb-93f2-fd29220dfaf9.png)
 
-## Spanish
+## Spanish ## English
 **Bot incompleto, aun faltan cosas por mejorar y contiene erroes.**
 
 por ahora mi bot solo cuenta con los siguientes comandos:
