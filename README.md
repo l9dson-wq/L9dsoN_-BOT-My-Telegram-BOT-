@@ -13,7 +13,7 @@ https://github.com/python-telegram-bot/python-telegram-bot
 
 # BOT
 
-**Bot incompleto, aun faltan cosas por mejorar y contiene erroes.**
+**El bot ya no contiene errores, este fue solo un proyecto de practica.**
 
 por ahora mi bot solo cuenta con los siguientes comandos:
 
